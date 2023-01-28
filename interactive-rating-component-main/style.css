@@ -1,11 +1,3 @@
-/* .attribution {
-  font-size: 11px;
-  text-align: center;
-}
-.attribution a {
-  color: hsl(228, 45%, 44%);
-} */
-
 * {
   margin: 0;
   padding: 0;
@@ -16,17 +8,16 @@ body {
   font-size: 11px;
   line-height: 1.5;
   background-color: hsl(216, 12%, 8%);
-  /* background-color: hsl(228, 11%, 9%); */
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
 }
 .container {
   width: 25%;
 }
-.container__fluid--rating {
+.container__fluid--rating,
+.conatainer__fluid--thank-you {
   background: radial-gradient(
     circle at top,
     hsl(215, 19%, 18%),
@@ -35,21 +26,24 @@ body {
   padding: 28px;
   border-radius: 12px;
 }
+.conatainer__fluid--thank-you {
+  text-align: center;
+}
 .star--icon {
   width: 40px;
   height: 40px;
   border-radius: 50%;
   background-color: hsl(217, 20%, 18%);
   display: flex;
-  /*
   justify-content: center;
-  align-items: center; */
+  align-items: center;
   padding: 12px;
 }
 .star--icon img {
   width: 100%;
 }
-.container__fluid--rating h2 {
+.container__fluid--rating h2,
+.conatainer__fluid--thank-you h2 {
   color: hsl(0, 0%, 100%);
   font-weight: 400;
   font-size: 22px;
@@ -57,14 +51,23 @@ body {
   margin-top: 24px;
 }
 
-.container__fluid--rating p {
+.container__fluid--rating p,
+.conatainer__fluid--thank-you p {
   color: hsl(216, 12%, 54%);
   margin: 10px 0;
-  font-size: 13px;
+  font-size: 0.85rem;
 }
 .button {
   border: none;
   cursor: pointer;
+  font-family: inherit;
+  transition: 0.3s;
+}
+.rating {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .btn__rating {
@@ -77,18 +80,41 @@ body {
   margin: 12px 0;
   font-weight: bold;
 }
-.btn__rating:not(:first-child) {
-  margin-left: 20px;
+.btn__rating:hover,
+.btn__rating:active {
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+}
+.btn__rating:focus {
+  background-color: hsl(216, 12%, 54%);
+  color: hsl(0, 0%, 100%);
 }
 .btn__submit {
   background-color: hsl(25, 97%, 53%);
-  display: block;
   width: 100%;
   margin-top: 20px;
   text-align: center;
-  padding: 10px;
+  padding: 10px 0 8px;
   text-transform: uppercase;
-  color: hsla(0, 0%, 100%, 0.8);
+  color: hsl(0, 0%, 100%);
   border-radius: 25px;
   letter-spacing: 2px;
+}
+.btn__submit:hover,
+.btn__submit:active {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(25, 97%, 53%);
+}
+.btn__thank-you {
+  background-color: hsla(213, 20%, 18%, 0.85);
+  color: hsl(25, 97%, 53%);
+  padding: 8px 16px;
+  border-radius: 25px;
+}
+
+.thank-you--icon {
+  margin: 20px auto;
+}
+.hidden {
+  display: none;
 }
