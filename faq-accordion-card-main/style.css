@@ -23,24 +23,33 @@ body {
   width: 920px;
   height: 509px;
   /* width: 55%; */
-  padding: 50px;
+  padding: 40px;
+  padding-left: 0;
   background-color: hsl(0, 0%, 100%);
   border-radius: 30px;
-  display: flex;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  grid-gap: 5rem;
   background-image: url(images/bg-pattern-desktop.svg);
   background-repeat: no-repeat;
   /* background-position: 560% 70%; */
   background-position: 1260% 65%;
 }
 .container__left {
-  width: 50%;
+  position: relative;
+}
+.accordion__image--bg {
   background-image: url(images/illustration-woman-online-desktop.svg);
+  height: 100%;
   background-repeat: no-repeat;
-  background-size: 75%;
+  background-position: 120% center;
+}
+.box {
+  position: absolute;
+  top: 40%;
+  left: -32%;
 }
 .container__right {
-  width: 50%;
   padding: 20px 50px 20px 10px;
 }
 .accordion__title {
@@ -50,12 +59,13 @@ body {
 }
 .accordion__question-and-answer {
   border-bottom: 1px solid hsl(240, 5%, 91%);
-  padding: 18px 0;
+  padding: 15px 0;
 }
 .accordion__question {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  cursor: pointer;
 }
 .accordion__question h4 {
   font-size: 0.9rem;
@@ -71,8 +81,18 @@ body {
   padding-top: 10px;
   display: none;
 }
+.active .accordion__answer {
+  display: block;
+}
 
-.box {
-  position: relative;
-  left: -100px;
+.active img {
+  transform: rotate(180deg);
+  transition: all 0.2s ease-in;
+}
+.active h4 {
+  font-weight: 700;
+}
+
+@media screen {
+  /* update this later*/
 }
