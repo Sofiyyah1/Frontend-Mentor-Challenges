@@ -10,6 +10,6 @@
 8. [Order summary component](https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj)
 9. [Article preview component](https://www.frontendmentor.io/challenges/article-preview-component-dYBN_pYFT)
 10. [Social proof section](https://www.frontendmentor.io/challenges/social-proof-section-6e0qTv_bA)
-11. [proof section](https://www.frontendmentor.io/challenges/social-proof-section-6e0qTv_bA)
+11. [Testimonials grid section](https://www.frontendmentor.io/challenges/testimonials-grid-section-Nnw6J7Un7)
 
 
