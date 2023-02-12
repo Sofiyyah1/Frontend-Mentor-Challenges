@@ -9,4 +9,7 @@
 7. [Stats preview card component](https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62)
 8. [Order summary component](https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj)
 9. [Article preview component](https://www.frontendmentor.io/challenges/article-preview-component-dYBN_pYFT)
+10. [Social proof section](https://www.frontendmentor.io/challenges/social-proof-section-6e0qTv_bA)
+11. [proof section](https://www.frontendmentor.io/challenges/social-proof-section-6e0qTv_bA)
+
 
