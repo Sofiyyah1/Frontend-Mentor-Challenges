@@ -95,7 +95,7 @@ p {
   position: absolute;
   left: 62%;
   bottom: 38%;
-  display: none;
+  visibility: hidden;
 }
 .social-icon {
   background-color: hsl(217, 19%, 35%);
@@ -122,5 +122,5 @@ p {
   width: 110%;
 }
 .active {
-  display: block;
+  visibility: visible;
 }
