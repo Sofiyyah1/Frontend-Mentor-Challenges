@@ -81,12 +81,7 @@ p {
   justify-content: center;
   align-items: center;
 }
-.share-icon:hover {
-  background-color: hsl(217, 19%, 35%);
-}
-/* .share-icon img {
-  color: #fff;
-} */
+
 .social__pop-up {
   display: flex;
   flex-direction: column;
@@ -123,4 +118,12 @@ p {
 }
 .active {
   visibility: visible;
+}
+.share-icon:hover,
+.share-icon:active {
+  background-color: hsl(217, 19%, 35%);
+}
+#share:active,
+#share:hover {
+  fill: #fff;
 }
